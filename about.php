@@ -6,7 +6,7 @@ $result = mysqli_query($koneksi, "SELECT * FROM book");
 <div class="text-white">
     <div class="container mx-auto px-8 my-10">
         <h1 class="text-3xl font-semibold mb-4">Tentang Kami</h1>
-        <p class="">Selamat datang di web Tobukas, melalui web ini anda dapat menginput data persediaan buku yang dibutuhkan.</p>
+        <p class="">Selamat datang di E-Stock. Silahkan kelola barang elektronik anda.</p>
     </div>
 
     <div class="container mx-auto px-8 mb-10">
@@ -17,8 +17,8 @@ $result = mysqli_query($koneksi, "SELECT * FROM book");
 
     <div class="container mx-auto px-8 mb-10">
         <h1 class="text-3xl font-semibold mb-4">Hubungi Kami</h1>
-        <p class="">Telephone : +62 88 77 6534</p>
-        <p class="">Email : tobukas@gmail.com</p>
+        <p class="">Telephone : +62 99 401 4023</p>
+        <p class="">Email : estock@gmail.com</p>
     </div>
 </div>
 

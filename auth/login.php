@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOBUKAS | Login</title>
+    <title>E-Stock | Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -19,43 +19,34 @@
     </script>
 </head>
 
-<body>
-    <div class="login-container">
-        <div class="flex h-full flex-wrap items-center justify-center gap-10">
-            <!-- Gambar Kiri-->
-            <div class="md:w-8/12 lg:w-1/3">
-                <img src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg" class="w-full" alt="Phone image" />
-            </div>
-            <!-- Gambar Kanan -->
-            <div class="md:w-8/12 lg:ml-6 lg:w-5/12 ">
-                <div class="font-bold text-4xl mb-10">Welcome to Tobukas</div>
+<section class="bg-gray-50 dark:bg-gray-900">
+    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+        <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+            <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                <h1 class="text-xl font-bold leading-tight tracking-tight text-[#0C2D57] md:text-2xl dark:text-white">
+                    Sign in to your E-Stock
+                </h1>
                 <form action="cek_login.php" method="post">
-                    <!-- Username input -->
-                    <div class="relative mb-6">
-                        <label for="username" class="text-neutral-500">Username</label>
-                        <input type="text" name="username" id="username" class="border min-h-[auto] w-full rounded px-3 py-[0.32rem] leading-[2.15] outline-none  dark:text-neutral-200 dark:placeholder:text-neutral-200" placeholder="Input Username" />
+                    <div class="mb-5">
+                        <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your username</label>
+                        <input type="username" name="username" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Input Username" required="">
                     </div>
-
-                    <!-- Password input -->
-                    <div class="relative mb-6">
-                        <label for="password" class="text-neutral-500">Password
-                        </label>
-                        <input type="password" name="password" id="password" class="border min-h-[auto] w-full rounded px-3 py-[0.32rem] leading-[2.15] outline-none  dark:text-neutral-200 dark:placeholder:text-neutral-200" placeholder="Password" />
+                    <div class="mb-5">
+                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                        <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
                     </div>
-
-                    <!-- Submit button -->
-                    <button type="submit" class="w-full rounded bg-blue-700 px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] hover:bg-blue-600 ">
+                    <button type="submit" class="w-full rounded bg-[#FC6736] hover:bg-orange-400 px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca]">
                         Login in
                     </button>
                 </form>
             </div>
         </div>
     </div>
-</body>
+</section>
 
 </html>
 
-<style>
+<!-- <style>
     html,
     body {
         height: 100%;
@@ -74,4 +65,4 @@
         height: 100%;
         background-color: #f0f0f0;
     }
-</style>
+</style> -->
